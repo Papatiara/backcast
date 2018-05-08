@@ -11,7 +11,6 @@ var VideoListView = Backbone.View.extend({
     for ( var i = 0; i < this.collection.models.length; i++) {
       console.log(this.collection.models[i]);
       var videoListEntry = new VideoListEntryView({model: this.collection.models[i]});
-      videoListEntry.class = i;
     }
     
     return this;
